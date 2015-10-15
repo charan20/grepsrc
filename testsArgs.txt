@@ -1,0 +1,840 @@
+-0 12345 
+"1\{0\}" 
+"1\\{0\\}" 
+"1\{10,11\}2" 
+"1\\{10,11\\}2" 
+-1 12345 
+12345a 
+- -- 12345 
+"--" 12345 
+"[1-2-9\]" 
+"\[1-2-9\]" 
+"[1-2-" 
+"\[1-2-" 
+"\{1,2" 
+"\{1,2\{" 
+"\\{1,2" 
+"\\{1,2\\{" 
+"[1-9\]\{1,2\}" 
+"\[1-9\]\\{1,2\\}" 
+"[1-9" 
+"[1-9\]\{" 
+"\[1-9" 
+"\[1-9\]\\{" 
+"1-9[[:" 
+"1-9\[\[:" 
+"[1a-\]" 
+"\[1a-\]" 
+"1>a" 
+"1\.a" 
+"1\\.a" 
+"[1A-" 
+"\[1A-" 
+"1[[:alnum:\]\]" 
+"1\[\[:alnum:\]\]" 
+"[1A-Z-A\]" 
+"\[1A-Z-A\]" 
+"[1A-Z-" 
+"\[1A-Z-" 
+"[[:1:\]\]" 
+"[1-" 
+"[1-\]" 
+"[1" 
+"\(1\)^" 
+"\[\[:1:\]\]" 
+"\[1-" 
+"\[1-\]" 
+"\[1" 
+"\{1" 
+"\{1\{" 
+"\\(1\\)^" 
+"\\{1" 
+"\\{1\\{" 
+"\\1" 
+"\1" 
+"1>" 
+"1\^" 
+"1\|^" 
+"1\?\+" 
+"1\\^" 
+"1\\|^" 
+"1\\?\\+" 
+"1\\" 
+"1\\\\" 
+"1\\+" 
+"1\\+\\?" 
+"1\\+\\+" 
+"1\+" 
+"1\+\?" 
+"1\+\+" 
+'\*\{1\}preg' 
+-2 12345 
+"\{2,1}" 
+"\\{2,1}" 
+"\\2" 
+"\2" 
+-3 12345 
+"\\3" 
+"\3" 
+-3 return 
+-4 12345 
+"\\4" 
+"\4" 
+-5 12345 
+"[5-1\]" 
+"\[5-1\]" 
+"\\5" 
+"\5" 
+-5 if 
+-6 12345 
+"\\6" 
+"\6" 
+-7 12345 
+-7 else 
+"\\7" 
+"\7" 
+-8 12345 
+"\\8" 
+"\8" 
+-9 12345 
+"\\9" 
+"\9" 
+"A\{0\}" 
+"A\\{0\\}" 
+"a\{10,11\}b" 
+"a\\{10,11\\}b" 
+-A -12345 
+"a\{1,2\}" 
+"a\\{1,2\\}" 
+"A\{1,2\}" 
+"A\\{1,2\\}" 
+"a\{1" 
+"a\\{1" 
+"a\{2,1}" 
+"a\\{2,1}" 
+-A 2 return 
+'a$a' 
+"a\(a" 
+"a\\(a" 
+"[Aa-" 
+"\[Aa-" 
+"a*[[:alnum:\]\]" 
+"a*\[\[:alnum:\]\]" 
+"[Aa-z-" 
+"\[Aa-z-" 
+"\|\(a\|b\)1*2\?3\+" 
+"\\|\\(a\\|b\\)1*2\\?3\\+" 
+"\(\a|b*\|c\?|d\+\)\{1\}" 
+"\\(\\a|b*\\|c\\?|d\\+\\)\\{1\\}" 
+"[[:abcdefg:\]\]" 
+"\[\[:abcdefg:\]\]" 
+"*\(abcde\)" 
+"*\\(abcde\\)" 
+"ABCDE" 
+"[A-B\]" 
+"\[A-B\]" 
+'[ab\]''le' 
+"[a-c-z\]" 
+"\[a-c-z\]" 
+"[a[:digit:\]" 
+"\[a\[:digit:\]" 
+"[[:a:\]\]" 
+"[a-\]" 
+"[a" 
+"*a" 
+"\[\[:a:\]\]" 
+"\[a-\]" 
+"\[a" 
+"a[" 
+"a[[:" 
+"a*[" 
+"a*\[" 
+"a\^" 
+"a\|^" 
+"a\(" 
+"a\[" 
+"a\[\[:" 
+"a\{" 
+"a\\^" 
+"a\\|^" 
+"a\\" 
+"a\\(" 
+"a\\{" 
+"a\\\\" 
+"[[:alnum:\]-9\]" 
+"\[\[:alnum:\]-9\]" 
+"[[:alnum:\]" 
+"[[:alnum:\]\]" 
+"\[\[:alnum:\]" 
+"\[\[:alnum:\]\]" 
+'[^[:alnum:\]\]\|include'  
+"[[:alpha:\]-5\]" 
+"\[\[:alpha:\]-5\]" 
+"[[:alpha:\]" 
+"\[\[:alpha:\]" 
+"[a-z\]\{0\}" 
+"\[a-z\]\\{0\\}" 
+"[a-z\]\{1,2\{" 
+"\[a-z\]\\{1,2\\{" 
+"[a-z\]\)" 
+"\[a-z\]\\)" 
+-B -12345 
+-B 2 -A 3 return 
+-B 2 return 
+"\(\b\)*" 
+"\(\b\)\+" 
+"\\(\\b\\)*" 
+"\\(\\b\\)\\+" 
+"B" 
+-bh include 
+"\bif (\{1\}gout\b" 
+"\bif (""\{1\}gout" 
+"\(\bif a\?g\|\bif a\?\)""out" 
+"\bif a\?g\|\bif a\?""out" 
+"\bif (\?g\b\|\bif out" 
+"\(\bif (\+g\|\bif (\+\)""out" 
+"\bif (\+g\|\bif (\+""out" 
+"\bif (\?g\|if (""\?out\b" 
+-b include 
+-b 'static int' 
+-c 12345a 
+"case ')':" 
+-c "" 
+-c "include" 
+-c include -  
+-c include 
+-c 'In.lude\|?\{1\}' 
+-c "/n" 
+-C return 
+-c TGGG 
+"[[:digit:\]-1-9\]" 
+"\[\[:digit:\]-1-9\]" 
+"[[:digit:\]-a-z\]" 
+"\[\[:digit:\]-a-z\]" 
+"[[:digit:\]-A-Z\]" 
+"\[\[:digit:\]-A-Z\]" 
+"\(\do|12345*\|main\?|A\+\)\{1\}" 
+"\\(\\do|12345*\\|main\\?|A\\+\\)\\{1\\}" 
+-E '\?''+ 0' 
+-E '\?''{1} 0' 
+-E '[12\]'  
+-e 1 -e 2 
+-E '[1-\]' 
+-E '\?''{1}.:' 
+-E '\*{1}p.eg' 
+-E '\*({1}''p.)' 
+-E '\*{1}preg' 
+-E '\*({1}''pr)' 
+-E 'a{1,5}' 
+-E 'a{2,}' 
+-E 'a{,3}' 
+-E '[ab\]|include'  
+-E '[ab\]''le'  
+-e a -e b 
+-E '[^[:alnum:\]\]'  
+-E '[^[:alnum:\]\]|include'  
+-E '[^[:alnum:\]\]''include'  
+-E 'b\B' 
+-E 'b$' 
+-E 'b*' 
+-E 'b\>' 
+-E "\bif \({1}g|\bif \({1}""out" 
+-E "\bif \({1}g|\bif out" 
+-E "\bif \({1}g|if \(""{1}out\b" 
+-E "\bif \({1}gout\b" 
+-E "\bif \(""{1}gout" 
+-E "\bif \(({1}""gout)" 
+-E "\bif a{1}g|\bif a({1}""out)" 
+-E "\bif a{1}g|\bif a{1}""out" 
+-E "\bif a{1}g|if a""{1}out\b" 
+-E "\bif a""{1}gout" 
+-E "\bif a({1}""gout)" 
+-E "\bif a?g|\bif a?""out" 
+-E "\bif a?g|\bif a(?""out)" 
+-E "\bif a+g|\bif a(+""out)" 
+-E "\bif a+g\b|if a""+out" 
+-E "\bif a?g|\bif out\b" 
+-E "\bif a+g|\bif out" 
+-E "\bif a?g|if a""?out" 
+-E "\bif a""?gout\b" 
+-E "\bif a?gout" 
+-E "\bif a(?""gout)" 
+-E "\bif a(+""gout)" 
+-E "\bif \(?g\b|\bif \((?""out)" 
+-E "\bif \(?g\b|\bif out" 
+-E "\bif \(?g|\bif \(?""out" 
+-E "\bif \(+g|\bif \((+""out)" 
+-E "\bif \(+g|\bif \(+""out" 
+-E "\bif \(+g|\bif out" 
+-E "\bif \(+g\b|if \(""+out" 
+-E "\bif \(?g|if \(""?out\b" 
+-E "\bif \(?gout\b" 
+-E "\bif \(""+gout\b" 
+-E "\bif \(""?gout" 
+-E "\bif \((?""gout)" 
+-E "\bif \((+""gout)" 
+-E "\bif \(+gout" 
+-E -c '[^a-z\]' 
+-Ec 'Include|\?{1}' 
+-Ec 'Include|\??' 
+-Ec 'Include|\?' 
+-Ec 'Include|\?+' 
+-Ec 'In.lude|\?{1}' 
+-Ec 'In.lude|\??' 
+-Ec 'In.lude|\?' 
+-Ec 'In.lude|\?+' 
+-E "[[:cntrl:\]\]" 
+-Ec static 
+-E 'dfaanalyze|ab''[lo\]'  
+-E "[[:digit:\]\]" 
+-E -F 12345 
+-E -G 12345 
+-E "[[:graph:\]\]" 
+-E . 
+-E '\?' 
+-E '\?''? :' 
+-E '\?''?.:' 
+-E '\?''+.:' 
+-E "if \({1}g\b|\bif \(({1}""out)" 
+-E "^if \({1}g|^if \(({1}""out)" 
+-E "^if \({1}g|^if \({1}""out" 
+-E "^if \({1}g|if \(""{1}out" 
+-E "\<if \({1}g|\<if \(({1}""out)" 
+-E "\<if \({1}g|\<if \({1}""out" 
+-E "\<if \({1}g|if \(""{1}out" 
+-E "^if \({1}g|^if out" 
+-E "\<if \({1}g|\<if out" 
+-E "^if \(""{1}gout" 
+-E "^if \(({1}""gout)" 
+-E "^if \({1}gout" 
+-E "\<if \(""{1}gout" 
+-E "\<if \(({1}""gout)" 
+-E "\<if \({1}gout" 
+-E "if a{1}g\b|\bif out" 
+-E "^if a{1}g|^if a({1}""out)" 
+-E "^if a{1}g|^if a{1}""out" 
+-E "^if a{1}g|if a""{1}out" 
+-E "\<if a{1}g|\<if a({1}""out)" 
+-E "\<if a{1}g|\<if a{1}""out" 
+-E "\<if a{1}g|if a""{1}out" 
+-E "^if a{1}g|^if out" 
+-E "\<if a{1}g|\<if out" 
+-E "if a{1}gout\b" 
+-E "^if a""{1}gout" 
+-E "^if a({1}""gout)" 
+-E "^if a{1}gout" 
+-E "\<if a""{1}gout" 
+-E "\<if a({1}""gout)" 
+-E "\<if a{1}gout" 
+-E "if a+g\b|\bif a+""out" 
+-E "^if a?g|^if a?""out" 
+-E "^if a?g|^if a(?""out)" 
+-E "^if a?g|if a""?out" 
+-E "^if a+g|^if a(+""out)" 
+-E "^if a+g|^if a+""out" 
+-E "^if a+g|if a""+out" 
+-E "\<if a?g|\<if a?""out" 
+-E "\<if a?g|\<if a(?""out)" 
+-E "\<if a?g|if a""?out" 
+-E "\<if a+g|\<if a(+""out)" 
+-E "\<if a+g|\<if a+""out" 
+-E "\<if a+g|if a""+out" 
+-E "^if a?g|^if out" 
+-E "^if a+g|^if out" 
+-E "\<if a?g|\<if out" 
+-E "\<if a+g|\<if out" 
+-E "if a""+gout\b" 
+-E "if a+gout\b" 
+-E "^if a?gout" 
+-E "^if a""?gout" 
+-E "^if a""+gout" 
+-E "^if a(?""gout)" 
+-E "^if a(+""gout)" 
+-E "^if a+gout" 
+-E "\<if a?gout" 
+-E "\<if a""?gout" 
+-E "\<if a""+gout" 
+-E "\<if a(?""gout)" 
+-E "\<if a(+""gout)" 
+-E "\<if a+gout" 
+-e if -e else 
+-E "^if \(?g|^if \(?""out" 
+-E "^if \(?g|^if \((?""out)" 
+-E "^if \(?g|^if out" 
+-E "^if \(?g|if \(""?out" 
+-E "^if \(+g|^if \((+""out)" 
+-E "^if \(+g|^if \(+""out" 
+-E "^if \(+g|^if out" 
+-E "^if \(+g|if \(""+out" 
+-E "\<if \(?g|\<if \(?""out" 
+-E "\<if \(?g|\<if \((?""out)" 
+-E "\<if \(?g|\<if out" 
+-E "\<if \(?g|if \(""?out" 
+-E "\<if \(+g|\<if \((+""out)" 
+-E "\<if \(+g|\<if \(+""out" 
+-E "\<if \(+g|\<if out" 
+-E "\<if \(+g|if \(""+out" 
+-E "^if \(?gout" 
+-E "^if \(""?gout" 
+-E "^if \(""+gout" 
+-E "^if \((?""gout)" 
+-E "^if \((+""gout)" 
+-E "^if \(+gout" 
+-E "\<if \(?gout" 
+-E "\<if \(""?gout" 
+-E "\<if \(""+gout" 
+-E "\<if \((?""gout)" 
+-E "\<if \((+""gout)" 
+-E "\<if \(+gout" 
+-E 'include|\?{1}''%' 
+-E 'Include|\?''{1}%' 
+-E 'Include|\?({1}''%)' 
+-E 'include|\?''?%'  
+-E 'include|\?''+%'  
+-E 'Include|\?''?%'  
+-E 'Include|\?''%' 
+-E 'Include|\?''+%'  
+-E 'Include|\?(?''%)' 
+-E 'Include|\?(+''%)' 
+-E 'Include|n{1}clude' 
+-E 'Include|n''{1}clud' 
+-E 'Include|n({1}''clud)' 
+-E 'Include|n{1}.lude' 
+-E 'Include|n''{1}.lud' 
+-E 'Include|n({1}''.lud)' 
+-E 'Include|n{1}''.lud' 
+-E 'Include|n+clude' 
+-E 'Include|n''?clud' 
+-E 'Include|n(?''clud)' 
+-E 'Include|n(+''clud)' 
+-E 'Include|n+''clud' 
+-E 'Include|n?.lude' 
+-E 'Include|n+.lude' 
+-E 'Include|n''?.lud' 
+-E 'Include|n''+.lud' 
+-E 'Include|n(?''.lud)' 
+-E 'Include|n(+''.lud)' 
+-E 'Include|n+''.lud' 
+-E 'include|\W''reg'  
+-E 'in.lude|\?''{1}%'  
+-E 'In.lude|\?''{1}%'  
+-E 'In.lude|\?({1}''%)' 
+-E 'in.lude|\??''%'  
+-E 'in.lude|\?+''%'  
+-E 'In.lude|\?''?%'  
+-E 'In.lude|\?''%' 
+-E 'In.lude|\?''+%'  
+-E 'In.lude|\?(?''%)' 
+-E 'In.lude|\?(+''%)' 
+'\`else' 
+'\\`else' 
+"\'else" 
+"\\'else" 
+"+else" 
+"else{" 
+"else\" 
+"else\\" 
+-E 'main|in?''clude' 
+-E 'main|n{1}''clud' 
+-E 'main|n?clude' 
+-E 'main|n''+clud' 
+-E 'main|n?''.lud' 
+-E 'n''{1}clude' 
+-E 'n({1}''clud)' 
+-E 'n{1}clud' 
+-E 'n''{1}.lude' 
+-E 'n({1}''.lud)' 
+-E 'n{1}.lud' 
+-E 'n''?clude' 
+-E 'n''+clude' 
+-E 'n?clud' 
+-E 'n(?''clud)' 
+-E 'n(+''clud)' 
+-E 'n+clud' 
+-E 'n''?.lude' 
+-E 'n''+.lude' 
+-E 'n?.lud' 
+-E 'n(?''.lud)' 
+-E 'n(+''.lud)' 
+-E 'n+.lud' 
+-E '\*(+''pattern)' 
+-E '\*?p.eg' 
+-E '\*+p.eg' 
+-E '\*p.eg' 
+-E '\*(?''p.)' 
+-E '\*(?''p)' 
+-E '\*(+''p.)' 
+-E '\*\*''p.' 
+-E '\*?preg' 
+-E '\*+preg' 
+-E '\*preg' 
+-E 'static'' int' 
+-E '[[:xdigit:\]\]' 
+-E "[\]X\]|end" 
+-E "[\]X\]|end"" -" 
+-E "[\]X\]" 
+-E "[\]X\]"" -" 
+-f 12345 
+-F agout 
+"[F-A\]" 
+"\[F-A\]" 
+-f biginput2.dat 
+-f biginput.dat 
+-F -E 12345 
+-f grep0.dat 
+-F '?' 
+-f  
+-F "if (gout)"  
+-F 'if (out)'  
+-F '/*#include' 
+-f nosuchfile 
+"\|\(for\|12345\)a*b\?c\+" 
+"\\|\\(for\\|12345\\)a*b\\?c\\+" 
+-G '?''\+ 0' 
+-G '?''\{1\} 0' 
+-G '[12\]'  
+-G '[1-5\]' 
+-G '?''\{1\}.:' 
+-G '\*\{1\}p.eg' 
+-G '[ab\]\|include'  
+-G '[^[:alnum:\]\]'  
+-G '[^[:alnum:\]\]''include'  
+-G '[[:alpha:\]\]' 
+-G "\(\bif (\{1\}g\|\bif (\{1\}\)""out" 
+-G "\bif (\{1\}g\|\bif (\{1\}""out" 
+-G "\bif (\{1\}g\|\bif out" 
+-G "\bif (\{1\}g\|if (""\{1\}out\b" 
+-G "\(\bif a\{1\}g\|\bif a\{1\}\)""out" 
+-G "\bif a\{1\}g\|\bif a\{1\}""out" 
+-G "\bif a\{1\}g\|if a""\{1\}out\b" 
+-G "\bif a""\{1\}gout" 
+-G "\bif a\+g\b\|if a""\+out" 
+-G "\bif a\?g\|\bif out\b" 
+-G "\bif a\+g\|\bif out" 
+-G "\bif a\?g\|if a""\?out" 
+-G "\bif a""\?gout\b" 
+-G "\bif a\?gout" 
+-G "\(\bif (\?g\|\bif (\?\)""out" 
+-G "\bif (\?g\|\bif (\?""out" 
+-G "\bif (\+g\|\bif out" 
+-G "\bif (\+g\b\|if (""\+out" 
+ [-G "\bif (""\+gout\b" 
+-G "\bif (\?gout\b" 
+-G "\bif (""\?gout" 
+-G "\bif (\+gout" 
+-Gc 'Include\|?\{1\}' 
+-Gc 'Include\|?' 
+-Gc 'Include\|?\?' 
+-Gc 'Include\|?\+' 
+-Gc 'In.lude\|?' 
+-Gc 'In.lude\|?\?' 
+-Gc 'In.lude\|?\+' 
+-Gc static 
+-G '\(dfaanalyze\|ab\)''[lo\]' 
+-G 'dfaanalyze\|ab''[lo\]'  
+-G '?' 
+-G '?''\? :' 
+-G '?''\?.:' 
+-G '?''\+.:' 
+-G '\?' 
+-G "^if (\{1\}g\|^if (\{1\}""out" 
+-G "^if (\{1\}g\|if (""\{1\}out" 
+-G "\<if (\{1\}g\|\<if (\{1\}""out" 
+-G "\<if (\{1\}g\|if (""\{1\}out" 
+-G "\(^if (\{1\}g\|^if (\{1\}\)""out" 
+-G "\(\<if (\{1\}g\|\<if (\{1\}\)""out" 
+-G "^if (\{1\}g\|^if out" 
+-G "\<if (\{1\}g\|\<if out" 
+-G "^if (""\{1\}gout" 
+-G "^if (\{1\}gout" 
+-G "\<if (\{1\}gout" 
+-G "if a\{1\}g\b\|\bif out" 
+-G "^if a\{1\}g\|if a""\{1\}out" 
+-G "\<if a\{1\}g\|\<if a\{1\}""out" 
+-G "\<if a\{1\}g\|if a""\{1\}out" 
+-G "\(\<if a\{1\}g\|\<if a\{1\}\)""out" 
+-G "^if a\{1\}g\|^if out" 
+-G "\<if a\{1\}g\|\<if out" 
+-G "if a\{1\}gout\b" 
+-G "\<if a""\{1\}gout" 
+-G "\<if a\{1\}gout" 
+-G "\(if a\+g\b\|\bif a\+\)""out" 
+-G "if a\+g\b\|\bif a\+""out" 
+-G "^if a\?g\|^if a\?""out" 
+-G "^if a\?g\|if a""\?out" 
+-G "^if a\+g\|^if a\+""out" 
+-G "^if a\+g\|if a""\+out" 
+-G "\<if a\?g\|\<if a\?""out" 
+-G "\<if a\+g\|\<if a\+""out" 
+-G "\<if a\+g\|if a""\+out" 
+-G "\(^if a\?g\|^if a\?\)""out" 
+-G "\(^if a\+g\|^if a\+\)""out" 
+-G "\(\<if a\?g\|\<if a\?\)""out" 
+-G "\(\<if a\+g\|\<if a\+\)""out" 
+-G "^if a\?g\|^if out" 
+-G "\<if a\?g\|\<if out" 
+-G "\<if a\+g\|\<if out" 
+-G "if a""\+gout\b" 
+-G "^if a""\?gout" 
+-G "^if a""\+gout" 
+-G "^if a\?gout" 
+-G "^if a\+gout" 
+-G "\<if a\?gout" 
+-G "\<if a\+gout" 
+-G "^if (\?g\|^if (\?""out" 
+-G "^if (\?g\|^if out" 
+-G "^if (\?g\|if (""\?out" 
+-G "^if (\+g\|^if (\+""out" 
+-G "^if (\+g\|^if out" 
+-G "^if (\+g\|if (""\+out" 
+-G "\<if (\?g\|\<if (\?""out" 
+-G "\<if (\?g\|\<if out" 
+-G "\<if (\?g\|if (""\?out" 
+-G "\<if (\+g\|\<if (\+""out" 
+-G "\<if (\+g\|\<if out" 
+-G "\<if (\+g\|if (""\+out" 
+-G "\(^if (\?g\|^if (\?\)""out" 
+-G "\(^if (\+g\|^if (\+\)""out" 
+-G "\(\<if (\?g\|\<if (\?\)""out" 
+-G "\(\<if (\+g\|\<if (\+\)""out" 
+-G "^if (""\?gout" 
+-G "^if (""\+gout" 
+-G "^if (\+gout" 
+-G "\<if (""\?gout" 
+-G "\<if (""\+gout" 
+-G "\<if (\?gout" 
+-G "\<if (\+gout" 
+-G '\(include\|?\{1\}\)''%' 
+-G 'include\|?\{1\}''%' 
+-G 'Include\|?''\{1\}%' 
+-G '\(include\|?\?\)''%'  
+-G '\(include\|?\+\)''%'  
+-G 'include\|?\?''%'  
+-G 'include\|?\+''%'  
+-G '\(Include\|?\)''%' 
+-G 'Include\|?''\?%'  
+-G 'Include\|?''\+%'  
+-G 'Include\|?''%' 
+-G 'Include\|n\{1\}clude' 
+-G 'Include\|n\{1\}.lude' 
+-G 'Include\|n''\{1\}.lud' 
+-G 'Include\|n\+clude' 
+-G '\(Include\|n\+\)''clud' 
+-G 'Include\|n''\?clud' 
+-G 'Include\|n\+''clud' 
+-G 'Include\|n\+.lude' 
+-G '\(Include\|n\+\)''.lud' 
+-G 'Include\|n''\?.lud' 
+-G 'Include\|n''\+.lud' 
+-G 'Include\|n\+''.lud' 
+-G '\(include\|\W\)''reg' 
+-G 'include\|\W''reg'  
+-G '\(in.lude\|?\{1\}\)''%'  
+-G 'in.lude\|?\{1\}''%'  
+-G 'In.lude\|?''\{1\}%'  
+-G '\(in.lude\|?\?\)''%'  
+-G '\(in.lude\|?\+\)''%'  
+-G 'in.lude\|?\?''%'  
+-G 'in.lude\|?\+''%'  
+-G 'In.lude\|?''\?%' 
+-G 'In.lude\|?''\+%'  
+-G "[[:lower:\]\]" 
+-G '\(main\|n\{1\}\)''clud' 
+-G 'main\|n\{1\}''clud' 
+-G 'main\|n\?clude' 
+-G 'main\|n''\+clud' 
+-G '\(main\|n\?\)''.lud' 
+-G 'main\|n\?''.lud' 
+-G 'n''\{1\}clude' 
+-G 'n\{1\}.lud' 
+-G 'n''\?clude' 
+-G 'n''\+clude' 
+-G 'n\?clud' 
+-G 'n\+clud' 
+-G 'n''\?.lude' 
+-G 'n\?.lud' 
+-G '\*\?p.eg' 
+-G '\*p.eg' 
+-G '\*\?preg' 
+-G '\*\+preg' 
+-G "[[:print:\]\]" 
+-G '[[:punct:\]\]' 
+grep0.dat 
+'$' 
+'\`' 
+'\$' 
+'\\`' 
+'\\$' 
+">" 
+"[" 
+"[[:" 
+"{" 
+"*" 
+"\^" 
+"\." 
+"\'" 
+"\" 
+"\(" 
+"\)" 
+"\[" 
+"\[\[:" 
+"\{" 
+"\\^" 
+"\\." 
+"\\'" 
+"\\" 
+"\\(" 
+"\\)" 
+"\\{" 
+"\\\[" 
+"\\\\" 
+"\\+" 
+"\+" 
+"+" 
+-G '[[:space:\]\]' 
+-G 'static'' int' 
+-G '[[:upper:\]\]' 
+-G '\w' 
+-G -X 12345 
+-G ' ":xdigit:\]' 
+-G ' ":xdigit:\]", is_xdigit' 
+-G "[\]X\]\|end" 
+-G "[\]X\]\|end"" -" 
+-G "\([\]X\]\|end\)"" -" 
+-G "[\]X\]" 
+-G '[X^YZ\]' 
+-h include 
+-i 12345 
+-i "[A-z1\]" 
+-i "\[A-z1\]" 
+-ibh include 
+-ib include 
+-ic "include" 
+-i "[C-x2\]" 
+-i "\[C-x2\]" 
+"if\{10,11\}else" 
+"if\\{10,11\\}else" 
+"\<if (""\{1\}gout" 
+"^if a\{1\}g\|^if a\{1\}""out" 
+"\(^if a\{1\}g\|^if a\{1\}\)""out" 
+"^if a""\{1\}gout" 
+"^if a\{1\}gout" 
+"\<if a\?g\|if a""\?out" 
+"^if a\+g\|^if out" 
+"if a\+gout\b" 
+"\<if a""\?gout" 
+"\<if a""\+gout" 
+"if\(\b\)*" 
+"if\\(\\b\\)*" 
+"\|\(if\|else\)1*2\?3\+" 
+"\\|\\(if\\|else\\)1*2\\?3\\+" 
+"\(\if|else*\|for\?|while\+\)\{1\}" 
+"\\(\\if|else*\\|for\\?|while\\+\\)\\{1\\}" 
+'if$else' 
+"if\.else" 
+"if\[else" 
+"if\\.else" 
+"if\\\[else" 
+"^if (\?gout" 
+'$if' 
+'if$' 
+'if\`' 
+'if\$' 
+'if\\`' 
+'if\\$' 
+"+if" 
+"if{" 
+"if\'" 
+"if\" 
+"if\)" 
+"if\[" 
+"if\\'" 
+"if\\" 
+"if\\)" 
+"if\\\[" 
+"if\\+" 
+"if\+" 
+'if$if' 
+'if (! lexleft)' 
+-ih include 
+-i "if[Xx5\]" 
+-i "if\[Xx5\]" 
+-i include 
+-ile --beg 
+-il include 
+-iL "include" 
+-inbh 'include' 
+-inb 'include' 
+include 
+'Include\|n''\{1\}clud' 
+'\(Include\|n\{1\}\)''.lud' 
+'Include\|n\{1\}''.lud' 
+'Include\|n\?.lude' 
+-inh 'include' 
+-in 'include' 
+'\(In.lude\|?\)''%' 
+'In.lude\|?''%' 
+-ivc "include" 
+-ivL "include" 
+-ivL "struct trie" 
+-L 12345a 
+-L "" 
+-l include 
+-L "include" 
+'main$' 
+'main\$' 
+'main\\$' 
+'\(main\|in\?\)''clude' 
+'main\|in\?''clude' 
+'n\{1\}clud' 
+-n 1 
+'n''\{1\}.lude' 
+-nbh '' 
+-nbh 'include' 
+-nb 'include' 
+-nh 'include' 
+-n I 
+-n 'include' 
+'n''\+.lude' 
+'n\+.lud' 
+-n "/* The following list maps the names of the Posix named character classes   static int laststart;True if we're separated from beginning or (, |" 
+'\*\+p.eg' 
+"< PEND'" 
+'\*\*''p.' 
+'\*preg' 
+-q include 
+"\\\{QUOTE} 
+size 
+'switch$|else' 
+-vbh include 
+-vbhn 'include' 
+-vb include 
+-vbn 'include' 
+-vc "include" 
+-vh include 
+-vibh include 
+-vib include 
+-vih include 
+-vi include 
+-vil 'include' 
+-vinbh 'include' 
+-vinb 'include' 
+-v include 
+-vinh 'include' 
+-vin 'include' 
+-vl include 
+-vL "include" 
+-vnh 'include' 
+-vn 'include' 
+'When group 3 ends' 
+-w in 
+-X grep 12345 
+"[\]X\]"" -" 
+-X grep abcde 
+-X grep if 
+-x "  return" 
+-Y 12345 
+"[z-a\]" 
+"\[z-a\]" 
+"[z[:digit:\]-f\]" 
+"\[z\[:digit:\]-f\]" 
